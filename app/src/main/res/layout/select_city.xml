@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".DublinActivity">
 
     <TextView
         android:id="@+id/userTextView"
@@ -31,42 +31,52 @@
         app:layout_constraintVertical_bias="0.818" />
 
     <Button
-        android:id="@+id/buttonWeather"
+        android:id="@+id/buttonDublin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="openWeatherActivity"
-        android:text="WEATHER"
+        android:layout_marginTop="50dp"
+        android:onClick="openDublinActivity"
+        android:text="DUBLIN"
         app:backgroundTint="#FE9900"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/buttonMaps"
+        android:id="@+id/buttonParis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="openMapsActivity"
-        android:text="MAPS"
+        android:onClick="openParisActivity"
+        android:text="Paris"
         app:backgroundTint="#FE9900"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonDublin"
+        app:layout_constraintVertical_bias="0.103" />
 
-    <Button
-        android:id="@+id/buttonBikeStation"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="openBikeStationActivity"
-        android:text="Bike Station"
-        app:backgroundTint="#FE9900"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Select Your City"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
+        app:layout_constraintTop_toBottomOf="@+id/userTextView"
+        app:srcCompat="@drawable/bike_icon" />
 </androidx.constraintlayout.widget.ConstraintLayout>

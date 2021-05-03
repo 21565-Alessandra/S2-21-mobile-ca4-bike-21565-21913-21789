@@ -1,7 +1,6 @@
 package com.project.gobike
 
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
 import android.os.Bundle
@@ -38,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 editor.putString("display", user)
                 editor.apply();
 
-                val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+                val intent = Intent(this@MainActivity, CityActivity::class.java)
                 startActivity(intent)
             }else{
                 Toast.makeText(this, "Please enter with your Email and Password", Toast.LENGTH_LONG).show()

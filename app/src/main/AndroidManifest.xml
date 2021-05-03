@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoBike">
-        <activity android:name=".WeatherActivity" android:parentActivityName=".ProfileActivity"></activity>
+        <activity android:name=".WeatherActivity" android:parentActivityName=".DublinActivity"></activity>
+        <activity android:name=".DublinActivity" android:parentActivityName=".CityActivity"></activity>
+        <activity android:name=".ParisActivity" android:parentActivityName=".CityActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -30,14 +32,20 @@
             android:value="@string/google_maps_key" />
 
          <activity android:name=".BikeStationActivity"
-         android:parentActivityName=".ProfileActivity"
+         android:parentActivityName=".DublinActivity"
          android:label="GoBike"/>
+
+        <activity
+            android:name=".MapsActivityParis"
+            android:label="@string/title_activity_main"
+            android:parentActivityName=".ParisActivity" />
 
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_main"
-            android:parentActivityName=".ProfileActivity" />
-        <activity android:name=".ProfileActivity" />
+            android:parentActivityName=".DublinActivity" />
+
+        <activity android:name=".CityActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
