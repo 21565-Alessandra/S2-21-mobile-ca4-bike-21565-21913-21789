@@ -90,6 +90,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val zoomLevel = 15f
 
+        
+
         //map.moveCamera(CameraUpdateFactory.newLatLng(dublin))
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(dublin, zoomLevel)) // to move the camera and pass in the zoom level
         //map.moveCamera(CameraUpdateFactory.newLatLngZoom(station_1, zoomLevel))

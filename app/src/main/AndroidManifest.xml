@@ -19,6 +19,7 @@
         <activity android:name=".WeatherActivity" android:parentActivityName=".DublinActivity"></activity>
         <activity android:name=".DublinActivity" android:parentActivityName=".CityActivity"></activity>
         <activity android:name=".ParisActivity" android:parentActivityName=".CityActivity"></activity>
+        <activity android:name=".WeatherParis" android:parentActivityName=".ParisActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
