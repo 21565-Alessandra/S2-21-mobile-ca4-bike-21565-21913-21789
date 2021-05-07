@@ -11,6 +11,7 @@
         android:id="@+id/userTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron_bold"
         android:text="@string"
         android:textColor="#FDFBFB"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,6 +25,7 @@
         android:id="@+id/textViewWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron_bold"
         android:text="@string"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/userTextView"
@@ -35,9 +37,10 @@
 
     <Button
         android:id="@+id/buttonDublin"
-        android:layout_width="95dp"
+        android:layout_width="106dp"
         android:layout_height="54dp"
         android:layout_marginTop="72dp"
+        android:fontFamily="@font/orbitron_bold"
         android:onClick="openDublinActivity"
         android:text="DUBLIN"
         android:textColor="#FF9900"
@@ -49,9 +52,10 @@
 
     <Button
         android:id="@+id/buttonParis"
-        android:layout_width="97dp"
-        android:layout_height="53dp"
+        android:layout_width="106dp"
+        android:layout_height="56dp"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/orbitron_bold"
         android:onClick="openParisActivity"
         android:text="Paris"
         android:textColor="#FF9900"
@@ -66,6 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
+        android:fontFamily="@font/orbitron_bold"
         android:text="SELECT YOUR CITY"
         android:textColor="#ffffff"
         android:textSize="20sp"
