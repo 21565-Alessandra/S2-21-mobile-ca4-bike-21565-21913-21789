@@ -1,3 +1,5 @@
+//21565 - Alessandra Reis // 21913 - Taiane Vieira da Silva // 21789 - Yuri Filipe Almeida Silva
+
 package com.project.gobike
 
 import android.Manifest
@@ -29,6 +31,7 @@ class MapsActivityParis : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_GoBike)
         setContentView(R.layout.activity_maps)
 
 

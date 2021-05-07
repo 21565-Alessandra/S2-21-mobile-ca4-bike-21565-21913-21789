@@ -1,3 +1,5 @@
+//21565 - Alessandra Reis // 21913 - Taiane Vieira da Silva // 21789 - Yuri Filipe Almeida Silva
+
 package com.project.gobike
 
 import android.os.AsyncTask
@@ -19,6 +21,7 @@ class WeatherParis : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_GoBike)
         setContentView(R.layout.weather_paris)
 
         weatherTask().execute()

@@ -1,3 +1,5 @@
+//21565 - Alessandra Reis // 21913 - Taiane Vieira da Silva // 21789 - Yuri Filipe Almeida Silva
+
 package com.project.gobike
 
 import android.content.Intent
@@ -14,7 +16,7 @@ class DublinActivity : AppCompatActivity() {
 
         val actionBar = supportActionBar
 
-        actionBar!!.title = "GoBike"
+        actionBar!!.title = "GoBike Dublin"
 
         actionBar.setDisplayHomeAsUpEnabled(true)
 
@@ -30,8 +32,10 @@ class DublinActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun openBikeStationActivity(view: View) {
-        val intent = Intent(this, BikeStationActivity::class.java)
+    fun openMainActivity(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
+
+
 }

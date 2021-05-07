@@ -1,19 +1,22 @@
+//21565 - Alessandra Reis // 21913 - Taiane Vieira da Silva // 21789 - Yuri Filipe Almeida Silva
+
 package com.project.gobike
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
+import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
 import java.io.IOException
-import kotlinx.android.synthetic.main.bikestation_list.*
+
 
 class BikeStationActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.bikestation_list)
+        setContentView(R.layout.activity_main)
 
-        recyclerView_main.layoutManager = LinearLayoutManager( this)
+        rvUsersList.layoutManager = LinearLayoutManager( this)
 
         fetchJson()
 

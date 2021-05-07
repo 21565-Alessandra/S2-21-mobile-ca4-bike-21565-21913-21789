@@ -1,3 +1,5 @@
+//21565 - Alessandra Reis // 21913 - Taiane Vieira da Silva // 21789 - Yuri Filipe Almeida Silva
+
 package com.project.gobike
 
 import android.content.Intent
@@ -21,6 +23,7 @@ class RegistrationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_GoBike)
         setContentView(R.layout.activity_registration)
 
         registerName = findViewById(R.id.editTextName);
@@ -41,7 +44,7 @@ class RegistrationActivity : AppCompatActivity() {
             editor.putString(registerPassword.text.toString(), registerPassword.text.toString())
             editor.apply()
             Toast.makeText(this, "Data saved", Toast.LENGTH_LONG).show()
-            val intent = Intent(this@RegistrationActivity, MainActivity::class.java)
+            val intent = Intent(this@RegistrationActivity, LoginActivity::class.java)
             startActivity(intent)
         })
     }
