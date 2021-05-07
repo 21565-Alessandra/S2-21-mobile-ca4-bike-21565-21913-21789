@@ -17,7 +17,7 @@ import java.util.*
 class WeatherParis : AppCompatActivity() {
 
     val CITY: String = "paris,fr"
-    val API: String = "8118ed6ee68db2debfaaa5a44c832918" // Use your own API key
+    val API: String = "c6bd2e14bffa16896eff7195e1490981" // Updeted API key
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
