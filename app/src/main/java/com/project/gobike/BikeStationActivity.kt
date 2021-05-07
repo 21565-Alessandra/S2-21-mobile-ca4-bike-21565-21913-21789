@@ -38,10 +38,10 @@ class BikeStationActivity : AppCompatActivity(){
 
                 val homeFeed = gson.fromJson(body, HomeFeed::class.java)
 
-                runOnUiThread {
+                /*runOnUiThread {
                     recyclerView_main.adapter = LocationAdapter(homeFeed)
 
-                }
+                }*/
             }
 
             override fun onFailure(call: Call, e: IOException) {

@@ -16,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoBike">
-        <activity android:name=".WeatherActivity" android:parentActivityName=".DublinActivity"></activity>
+        <activity android:name=".WeatherActivity" android:parentActivityName=".DublinActivity" android:label="GoBike Dublin"></activity>
         <activity android:name=".DublinActivity" android:parentActivityName=".CityActivity"></activity>
         <activity android:name=".ParisActivity" android:parentActivityName=".CityActivity"></activity>
         <activity android:name=".WeatherParis" android:parentActivityName=".ParisActivity"></activity>

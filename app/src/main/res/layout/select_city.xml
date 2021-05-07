@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FE9900"
     tools:context=".DublinActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string"
+        android:textColor="#FDFBFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -23,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/userTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -32,51 +35,65 @@
 
     <Button
         android:id="@+id/buttonDublin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="72dp"
         android:onClick="openDublinActivity"
         android:text="DUBLIN"
-        app:backgroundTint="#FE9900"
+        android:textColor="#FF9900"
+        app:backgroundTint="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonParis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="97dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
         android:onClick="openParisActivity"
         android:text="Paris"
-        app:backgroundTint="#FE9900"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#FF9900"
+        app:backgroundTint="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDublin"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonDublin" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Select Your City"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:layout_marginTop="48dp"
+        android:text="SELECT YOUR CITY"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="119dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/imageView7"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userTextView"
-        app:srcCompat="@drawable/bike_icon" />
+        app:srcCompat="@drawable/bike_icon_white" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonParis"
+        app:layout_constraintVertical_bias="0.776"
+        app:srcCompat="@drawable/gobike_icon_white__1_" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
