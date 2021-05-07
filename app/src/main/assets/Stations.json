@@ -25,6 +25,42 @@
       }
     },
     {
+      "id": 61,
+      "name": "dublin",
+      "email": "HARDWICKE PLACE",
+      "gender": "Hardwicke Place",
+      "weight": 53.357043,
+      "height": -6.263232,
+      "phone": {
+        "mobile": 25,
+        "office": 9
+      }
+    },
+    {
+      "id": 77,
+      "name": "dublin",
+      "email": "WOLFE TONE STREET",
+      "gender": "Wolfe Tone Street",
+      "weight": 53.348875,
+      "height":-6.267459,
+      "phone": {
+        "mobile": 29,
+        "office": 3
+      }
+    },
+    {
+      "id": 73,
+      "name": "dublin",
+      "email": "FRANCIS STREET",
+      "gender": "Francis Street",
+      "weight": 53.342081,
+      "height": -6.275233,
+      "phone": {
+        "mobile": 30,
+        "office": 4
+      }
+    },
+    {
       "id": 30,
       "name": "dublin",
       "email": "PARNELL SQUARE NORTH",
