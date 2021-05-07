@@ -33,8 +33,8 @@ class ParisActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun openBikeStationParis(view: View) {
-        val intent = Intent(this, BikeStationParis::class.java)
+    fun openMainActivityParis(view: View) {
+        val intent = Intent(this, MainActivityParis::class.java)
         startActivity(intent)
     }
 }

@@ -16,7 +16,7 @@ class BikeStationActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        rvUsersList.layoutManager = LinearLayoutManager( this)
+        rvUsersListParis.layoutManager = LinearLayoutManager( this)
 
         fetchJson()
 

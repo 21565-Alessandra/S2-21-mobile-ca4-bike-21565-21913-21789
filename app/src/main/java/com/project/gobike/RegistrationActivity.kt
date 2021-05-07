@@ -26,6 +26,12 @@ class RegistrationActivity : AppCompatActivity() {
         setTheme(R.style.Theme_GoBike)
         setContentView(R.layout.activity_registration)
 
+        val actionBar = supportActionBar
+
+        actionBar!!.title = "GoBike Registration"
+
+        actionBar.setDisplayHomeAsUpEnabled(true)
+
         registerName = findViewById(R.id.editTextName);
         registerDateOfBirth = findViewById(R.id.editTextDate)
         registerEmail = findViewById(R.id.editTextEmailAddress)

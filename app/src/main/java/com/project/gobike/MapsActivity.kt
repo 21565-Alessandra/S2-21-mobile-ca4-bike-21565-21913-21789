@@ -44,7 +44,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val actionBar = supportActionBar
 
-          actionBar!!.title = "GoBike"
+          actionBar!!.title = "GoBike Dublin"
 
         actionBar.setDisplayHomeAsUpEnabled(true)
 

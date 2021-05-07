@@ -12,15 +12,15 @@ import org.json.JSONObject
 import java.io.IOException
 import java.nio.charset.Charset
 
-class MainActivity : AppCompatActivity() {
+class MainActivityParis : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_paris)
 
         val actionBar = supportActionBar
 
-        actionBar!!.title = "Bike Station List - Dublin"
+        actionBar!!.title = "Bike Station List - Paris"
 
         actionBar.setDisplayHomeAsUpEnabled(true)
 
