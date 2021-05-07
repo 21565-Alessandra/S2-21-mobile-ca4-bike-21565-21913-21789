@@ -2,7 +2,7 @@
 package com.project.gobike.Model
 
 //Creating a data model class for Station
-class UserModelClass(
+class StationModelClass(
         val id: Int,
         val name: String,
         val email: String,

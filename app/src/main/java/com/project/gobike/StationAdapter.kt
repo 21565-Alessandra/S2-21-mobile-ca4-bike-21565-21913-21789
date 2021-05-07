@@ -7,11 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.project.gobike.Model.UserModelClass
-import kotlinx.android.synthetic.main.item_user_layout.view.*
+import com.project.gobike.Model.StationModelClass
+import kotlinx.android.synthetic.main.item_station_layout.view.*
 
-class UserAdapter(val context: Context, val items: ArrayList<UserModelClass>) :
-        RecyclerView.Adapter<UserAdapter.ViewHolder>() {
+class StationAdapter(val context: Context, val items: ArrayList<StationModelClass>) :
+        RecyclerView.Adapter<StationAdapter.ViewHolder>() {
 
     /**
      * Inflates the item views which is designed in xml layout file
@@ -22,7 +22,7 @@ class UserAdapter(val context: Context, val items: ArrayList<UserModelClass>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
                 LayoutInflater.from(context).inflate(
-                        R.layout.item_user_layout,
+                        R.layout.item_station_layout,
                         parent,
                         false
                 )

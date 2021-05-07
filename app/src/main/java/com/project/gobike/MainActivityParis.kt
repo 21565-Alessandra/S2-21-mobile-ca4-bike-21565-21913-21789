@@ -5,8 +5,8 @@ package com.project.gobike
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.project.gobike.Model.UserModelClass
-import kotlinx.android.synthetic.main.activity_main.*
+import com.project.gobike.Model.StationModelClass
+import kotlinx.android.synthetic.main.activity_main_paris.*
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
@@ -25,7 +25,7 @@ class MainActivityParis : AppCompatActivity() {
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         // Instance of users list using the data model class.
-        val usersList: ArrayList<UserModelClass> = ArrayList()
+        val usersList: ArrayList<StationModelClass> = ArrayList()
 
         try {
             // As we have JSON object, so we are getting the object
@@ -55,7 +55,7 @@ class MainActivityParis : AppCompatActivity() {
 
                 // Now add all the variables to the data model class and the data model class to the array list.
                 val userDetails =
-                        UserModelClass(id, name, email, gender, weight, height, mobile, office)
+                        StationModelClass(id, name, email, gender, weight, height, mobile, office)
 
                 // add the details in the list
                 usersList.add(userDetails)
@@ -68,7 +68,7 @@ class MainActivityParis : AppCompatActivity() {
         // Set the LayoutManager that this RecyclerView will use.
         rvUsersListParis.layoutManager = LinearLayoutManager(this)
         // Adapter class is initialized and list is passed in the param.
-        val itemAdapter = UserAdapter(this, usersList)
+        val itemAdapter = StationAdapter(this, usersList)
         // adapter instance is set to the recyclerview to inflate the items.
         rvUsersListParis.adapter = itemAdapter
 
@@ -83,7 +83,7 @@ class MainActivityParis : AppCompatActivity() {
         var json: String? = null
         val charset: Charset = Charsets.UTF_8
         try {
-            val myUsersJSONFile = assets.open("Users.json")
+            val myUsersJSONFile = assets.open("Stations.json")
             val size = myUsersJSONFile.available()
             val buffer = ByteArray(size)
             myUsersJSONFile.read(buffer)
