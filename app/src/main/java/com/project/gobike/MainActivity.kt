@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_GoBike)
         setContentView(R.layout.activity_main)
 
         loginEmail = findViewById(R.id.editTextEmail);
